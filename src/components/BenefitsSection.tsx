@@ -36,8 +36,8 @@ const BenefitsSection = () => {
         </p>
 
         <a
-          href="#form"
-          className="inline-block bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded transition-colors text-lg"
+          href="tel:801-515-0649"
+          className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded-xl text-lg"
         >
           Get Your Cash Offer
         </a>

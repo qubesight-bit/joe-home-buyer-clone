@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Checkbox } from "@/components/ui/checkbox";
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({
     address: "",
     phone: "",
     email: "",
-    smsConsent: false,
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -67,21 +65,11 @@ const LeadForm = () => {
         </div>
 
         <p className="text-xs text-muted-foreground italic">
-          We respect your privacy and will not share or sell your information.
+          We respect your privacy and will not share or sell your information.{" "}
+          <a href="/privacy" className="text-primary hover:underline font-medium">
+            Privacy Policy
+          </a>
         </p>
-
-        <div className="flex items-center gap-2">
-          <Checkbox
-            id="sms"
-            checked={formData.smsConsent}
-            onCheckedChange={(checked) =>
-              setFormData({ ...formData, smsConsent: checked === true })
-            }
-          />
-          <label htmlFor="sms" className="text-xs text-muted-foreground">
-            By checking this box, you consent to receive SMS messages
-          </label>
-        </div>
 
         <button
           type="submit"

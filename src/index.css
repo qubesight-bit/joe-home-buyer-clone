@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,46 +6,53 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 20%;
+    --background: 0 0% 99%;
+    --foreground: 210 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 210 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 210 20% 15%;
 
-    --primary: 220 60% 25%;
+    --primary: 210 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 220 20% 20%;
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 210 20% 15%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 25% 95%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 40 90% 50%;
-    --accent-foreground: 220 60% 15%;
+    --accent: 210 70% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 220 60% 25%;
+    --border: 210 20% 92%;
+    --input: 210 20% 92%;
+    --ring: 210 70% 45%;
 
-    --radius: 0.375rem;
+    --radius: 0.5rem;
+
+    /* Flat 3D shadows */
+    --shadow-flat: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --shadow-lifted: 0 8px 24px rgba(0, 0, 0, 0.08);
 
     /* Custom tokens */
-    --nav-bg: 220 60% 18%;
-    --nav-foreground: 0 0% 100%;
-    --hero-overlay: 220 60% 10%;
-    --cta: 40 90% 50%;
-    --cta-hover: 40 90% 45%;
-    --cta-foreground: 220 60% 10%;
-    --section-alt: 220 15% 97%;
-    --footer-bg: 220 20% 15%;
-    --footer-foreground: 220 10% 80%;
+    --nav-bg: 0 0% 100%;
+    --nav-foreground: 210 20% 15%;
+    --header-bg: 0 0% 100%;
+    --header-foreground: 210 20% 15%;
+    --hero-overlay: 210 60% 20%;
+    --cta: 210 70% 45%;
+    --cta-hover: 210 70% 38%;
+    --cta-foreground: 0 0% 100%;
+    --section-alt: 210 25% 97%;
+    --footer-bg: 210 25% 12%;
+    --footer-foreground: 210 10% 85%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -86,10 +93,44 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Flat modern button with subtle 3D lift on hover */
+  .btn-flat-3d {
+    @apply inline-flex items-center justify-center font-semibold transition-all duration-200 ease-out;
+    box-shadow: var(--shadow-flat);
+  }
+  .btn-flat-3d:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elevated);
+  }
+  .btn-flat-3d:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-flat);
+  }
+
+  /* Flat card with subtle 3D elevation */
+  .card-flat-3d {
+    @apply bg-card border border-border transition-all duration-200;
+    box-shadow: var(--shadow-flat);
+  }
+  .card-flat-3d:hover {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Input with flat modern style */
+  .input-flat {
+    @apply border border-input bg-background transition-colors;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  .input-flat:focus {
+    box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
   }
 }

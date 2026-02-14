@@ -1,4 +1,4 @@
-import couplePhoto from "@/assets/couple-photo.jpg";
+const CORY_JEN_PHOTO = "https://image-cdn.carrot.com/uploads/sites/31595/2024/03/Cory-Jen-Professional-683x1024.jpg";
 
 const AboutSection = () => {
   return (
@@ -22,8 +22,8 @@ const AboutSection = () => {
             We help Utah homeowners in all kinds of situations. If you have a property and need to sell it, we'd like to make you a fair cash offer and close on it when you're ready.
           </p>
           <a
-            href="#form"
-            className="inline-block bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded transition-colors text-lg"
+            href="tel:801-515-0649"
+            className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded-xl text-lg"
           >
             Get Your Cash Offer
           </a>
@@ -31,12 +31,12 @@ const AboutSection = () => {
 
         {/* Sidebar */}
         <div className="lg:w-80 shrink-0">
-          <div className="bg-card border border-border rounded-lg p-6 shadow-md">
+          <div className="card-flat-3d rounded-xl p-6">
             <h4 className="font-heading font-bold text-lg text-foreground mb-3">Cory and Jen</h4>
             <img
-              src={couplePhoto}
+              src={CORY_JEN_PHOTO}
               alt="Cory and Jen"
-              className="w-full rounded mb-3"
+              className="w-full rounded-lg mb-3"
             />
             <p className="text-sm text-muted-foreground">
               We're local home buyers dedicated to helping Northern Utah homeowners sell quickly and stress-free.

@@ -14,8 +14,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Oswald"', 'sans-serif'],
-        body: ['"Open Sans"', 'sans-serif'],
+        heading: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        flat: '0 1px 2px rgba(0, 0, 0, 0.04)',
+        elevated: '0 4px 12px rgba(0, 0, 0, 0.06)',
+        lifted: '0 8px 24px rgba(0, 0, 0, 0.08)',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -77,9 +82,9 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0.75rem",
+        md: "0.5rem",
+        sm: "0.375rem",
       },
       keyframes: {
         "accordion-down": {

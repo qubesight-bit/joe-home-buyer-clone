@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-footer text-footer-foreground py-10">
@@ -14,8 +16,9 @@ const Footer = () => {
           </a>
         </p>
         <div className="flex justify-center gap-6 text-sm">
-          <a href="#" className="hover:underline">Privacy Policy</a>
-          <a href="#" className="hover:underline">Terms of Service</a>
+          <Link to="/privacy" className="hover:underline">Privacy Policy</Link>
+          <Link to="/opt-in" className="hover:underline">SMS Opt-In</Link>
+          <Link to="/terms" className="hover:underline">Terms of Service</Link>
         </div>
         <p className="text-xs mt-6 opacity-60">
           © {new Date().getFullYear()} Simple Sold Homes LLC. All rights reserved.

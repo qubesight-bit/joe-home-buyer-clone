@@ -54,10 +54,10 @@ const CompareSection = () => {
 
         <div className="mt-12 text-center">
           <a
-            href="tel:801-515-0649"
+            href="/opt-in"
             className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold text-lg px-8 py-3 rounded-xl"
           >
-            Get Your Fair Cash Offer – Call 801-515-0649
+            Get Your Fair Cash Offer
           </a>
         </div>
       </div>

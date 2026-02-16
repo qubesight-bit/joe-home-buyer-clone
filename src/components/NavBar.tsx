@@ -11,10 +11,11 @@ const PHONE = "tel:801-515-0649";
 
 const navItems = [
   { label: "Sell Your House ›", href: "/#form" },
+  { label: "Get Offer", href: "/opt-in" },
   { label: "How It Works", href: "/#how-it-works" },
+  { label: "Before & After", href: "/#before-after" },
   { label: "Compare", href: "/#listing-vs-us" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "Compliance", href: "/#compliance" },
+  { label: "Reviews", href: "/#testimonials" },
   { label: "FAQ", href: "/#faq" },
   { label: "Locations", href: "/#locations", hasDropdown: true },
   { label: "Contact Us", href: PHONE },

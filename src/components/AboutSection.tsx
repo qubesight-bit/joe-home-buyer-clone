@@ -22,7 +22,7 @@ const AboutSection = () => {
             We help Utah homeowners in all kinds of situations. If you have a property and need to sell it, we'd like to make you a fair cash offer and close on it when you're ready.
           </p>
           <a
-            href="tel:801-515-0649"
+            href="/opt-in"
             className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded-xl text-lg"
           >
             Get Your Cash Offer

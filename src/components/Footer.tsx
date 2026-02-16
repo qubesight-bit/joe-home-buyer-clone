@@ -8,8 +8,14 @@ const Footer = () => {
           Joe Homebuyer | Simple Sold Homes LLC
         </p>
         <p className="text-sm mb-4">
-          We buy houses in Ogden, UT and all surrounding areas. If you need to sell your house fast, connect with us for a fair no-obligation offer.
+          We buy houses in Ogden, UT and all surrounding areas. Enter your address to receive a fair, no-obligation offer.
         </p>
+        <Link
+          to="/opt-in"
+          className="inline-block btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-6 py-2 rounded-xl text-sm mb-4"
+        >
+          Get Your Cash Offer
+        </Link>
         <p className="text-sm mb-4">
           <a href="tel:801-515-0649" className="text-accent hover:underline font-semibold">
             801-515-0649

@@ -36,7 +36,7 @@ const BenefitsSection = () => {
         </p>
 
         <a
-          href="tel:801-515-0649"
+          href="/opt-in"
           className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded-xl text-lg"
         >
           Get Your Cash Offer

@@ -1,10 +1,9 @@
 const ARROW_IMG = "https://image-cdn.carrot.com/images/arrow/arrow_right_01.png";
 
 const steps = [
-  { title: "Tell us about your property", sub: "Quick, Easy & Free!" },
-  { title: "If it meets our buying criteria, we'll contact you to set up a quick appointment" },
-  { title: "We'll present you w/ a fair written, no-obligation offer" },
-  { title: "We close at a local reputable title company, cash in your hands in as little as 7 days" },
+  { title: "Submit your info", sub: "Quick, Easy & Free!" },
+  { title: "Let's talk – consult with us to discuss your property details" },
+  { title: "Receive cash – we close on your timeline and you get paid within days" },
 ];
 
 const HowItWorksSection = () => {
@@ -12,8 +11,11 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="py-16 bg-section-alt">
       <div className="container">
         <h2 className="text-3xl font-heading font-bold text-foreground mb-4 text-center">
-          How Our Cash Home Buying Process Works in Utah
+          Our Process is Simple
         </h2>
+        <p className="text-muted-foreground text-center mb-4">
+          Sell Your House Fast for Cash In 3 Easy Steps.
+        </p>
         <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 md:gap-2 mt-8">
           {steps.map((step, i) => (
             <div key={i} className="flex items-center">
@@ -38,10 +40,10 @@ const HowItWorksSection = () => {
         </p>
         <div className="text-center">
           <a
-            href="tel:801-515-0649"
+            href="/opt-in"
             className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold px-8 py-3 rounded-xl text-lg"
           >
-            Call 801-515-0649 to Get Started
+            Get Started
           </a>
         </div>
       </div>

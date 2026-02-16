@@ -13,6 +13,15 @@ const TopBar = () => {
           />
         </Link>
         <div className="flex items-center gap-6 text-[hsl(var(--header-foreground))]">
+          <a
+            href="https://www.bbb.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:block text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors"
+            title="BBB Accredited"
+          >
+            BBB Accredited
+          </a>
           <a href="/#form" className="text-sm font-semibold hover:text-primary transition-colors hidden sm:inline">
             Get A Cash Offer Today
           </a>

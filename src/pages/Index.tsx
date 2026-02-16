@@ -7,7 +7,7 @@ import BenefitsSection from "@/components/BenefitsSection";
 import SecondFormSection from "@/components/SecondFormSection";
 import CompareSection from "@/components/CompareSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ComplianceSection from "@/components/ComplianceSection";
+
 import FAQSection from "@/components/FAQSection";
 import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
@@ -25,7 +25,7 @@ const Index = () => {
         <SecondFormSection />
         <CompareSection />
         <TestimonialsSection />
-        <ComplianceSection />
+        
         <FAQSection />
         <LocationsSection />
       </main>

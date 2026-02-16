@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import { Checkbox } from "@/components/ui/checkbox";
 
 const OptInPage = () => {
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
   const [smsConsent, setSmsConsent] = useState(false);
 
@@ -20,6 +22,8 @@ const OptInPage = () => {
       description: "Reply STOP to unsubscribe anytime.",
       duration: 5000,
     });
+    setName("");
+    setAddress("");
     setPhone("");
     setSmsConsent(false);
   };
@@ -39,6 +43,34 @@ const OptInPage = () => {
 
           <div className="card-flat-3d rounded-xl p-6">
             <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-1">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Your full name"
+                  className="input-flat w-full rounded-lg px-3 py-2 text-sm bg-background text-foreground focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="address" className="block text-sm font-semibold text-foreground mb-1">
+                  Property Address
+                </label>
+                <input
+                  id="address"
+                  type="text"
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                  placeholder="Street address, city, state"
+                  className="input-flat w-full rounded-lg px-3 py-2 text-sm bg-background text-foreground focus:outline-none"
+                />
+              </div>
+
               <div>
                 <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-1">
                   Mobile Phone Number <span className="text-destructive">*</span>

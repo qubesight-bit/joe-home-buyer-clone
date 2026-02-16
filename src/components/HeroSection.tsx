@@ -22,10 +22,10 @@ const HeroSection = () => {
           Get a Fair Cash Offer – You Choose the Closing Date. We Cover All Costs!
         </h2>
         <a
-          href="tel:801-515-0649"
+          href="/opt-in"
           className="btn-flat-3d bg-cta hover:bg-cta-hover text-cta-foreground font-heading font-bold text-xl px-10 py-4 rounded-xl mb-8"
         >
-          Get Your Cash Offer – Call 801-515-0649
+          Get Your Cash Offer
         </a>
         <img
           src={CORY_JEN_PHOTO}

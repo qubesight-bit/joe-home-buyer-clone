@@ -35,6 +35,7 @@ const HousesBoughtSection = () => {
                 src={img.src}
                 alt={img.alt}
                 className="w-full aspect-video object-cover"
+                referrerPolicy="no-referrer"
               />
               <p className="p-3 text-sm font-semibold text-foreground text-center">{img.title}</p>
             </div>
@@ -53,6 +54,7 @@ const HousesBoughtSection = () => {
                     src={pair.before}
                     alt={`${pair.title} before`}
                     className="w-full aspect-video object-cover rounded-lg"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div>
@@ -61,6 +63,7 @@ const HousesBoughtSection = () => {
                     src={pair.after}
                     alt={`${pair.title} after`}
                     className="w-full aspect-video object-cover rounded-lg"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
